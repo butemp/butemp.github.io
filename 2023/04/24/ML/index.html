@@ -13,20 +13,32 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/04/24/test/"/>
+    <link rel="canonical" href="http://example.com/2023/04/24/ml/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://example.com/2023/04/24/test/index.html">
+        <meta name="description" content="监督学习（Supervised learning）给定正确的数据，即一些输入X到Y的映射，让机器去学习之间的映射关系 通常有两大类：回归与分类 回归的结果有无穷多 分类只会给出特定几种结果 区别：  无监督学习 并不试图让机器对于给定输入，给出正确答案。只是希望去发现一些结构或者新模式。  聚类 算法就是其中一种 它将未经过标记的数据放置到不同的集群中去 eg: 谷歌新闻排版，它会将相关性强的放在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/04/24/ML/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="监督学习（Supervised learning）给定正确的数据，即一些输入X到Y的映射，让机器去学习之间的映射关系 通常有两大类：回归与分类 回归的结果有无穷多 分类只会给出特定几种结果 区别：  无监督学习 并不试图让机器对于给定输入，给出正确答案。只是希望去发现一些结构或者新模式。  聚类 算法就是其中一种 它将未经过标记的数据放置到不同的集群中去 eg: 谷歌新闻排版，它会将相关性强的放在">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-04-24T12:56:05.000Z">
-<meta property="article:modified_time" content="2023-04-24T12:56:05.959Z">
+<meta property="og:image" content="c:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424092935198.png">
+<meta property="og:image" content="c:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424153414865.png">
+<meta property="og:image" content="c:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424093307578.png">
+<meta property="og:image" content="c:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424160445132.png">
+<meta property="og:image" content="c:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424161307015.png">
+<meta property="og:image" content="c:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424162714596.png">
+<meta property="og:image" content="c:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424163727868.png">
+<meta property="og:image" content="c:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424164753749.png">
+<meta property="og:image" content="c:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424170119968.png">
+<meta property="article:published_time" content="2023-04-24T13:26:21.909Z">
+<meta property="article:modified_time" content="2023-04-24T11:41:21.375Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424092935198.png">
     
     <!--- Icon Part-->
     <link rel="icon" type="image/png" href="/images/redefine-favicon.svg" sizes="192x192">
@@ -36,8 +48,6 @@
     <!--- Page Info-->
     
     <title>
-        
-            test -
         
         Theme Redefine
     </title>
@@ -192,7 +202,7 @@
             
             
                 <div class="article-title">
-                    <h1 class="article-title-regular">test</h1>
+                    <h1 class="article-title-regular"></h1>
                 </div>
             
                 
@@ -214,15 +224,15 @@
                             <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-04-24 20:56:05</span>
-        <span class="mobile">2023-04-24 20:56</span>
+        <span class="desktop">2023-04-24 21:26:21</span>
+        <span class="mobile">2023-04-24 21:26</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-04-24 20:56:05</span>
-            <span class="mobile">2023-04-24 20:56</span>
+            <span class="desktop">2023-04-24 19:41:21</span>
+            <span class="mobile">2023-04-24 19:41</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -246,23 +256,106 @@
             
 
             <div class="article-content markdown-body">
-                
+                <h3 id="监督学习（Supervised-learning）"><a href="#监督学习（Supervised-learning）" class="headerlink" title="监督学习（Supervised learning）"></a>监督学习（Supervised learning）</h3><p>给定正确的数据，即一些输入X到Y的映射，让机器去学习之间的映射关系</p>
+<p>通常有两大类：<strong>回归</strong>与<strong>分类</strong></p>
+<p>回归的结果有无穷多</p>
+<p>分类只会给出特定几种结果</p>
+<p>区别：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424092935198.png"
+                      alt="image-20230424092935198"
+                ></p>
+<h3 id="无监督学习"><a href="#无监督学习" class="headerlink" title="无监督学习"></a>无监督学习</h3><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424153414865.png"
+                      alt="image-20230424153414865"
+                ></p>
+<p>并不试图让机器对于给定输入，给出正确答案。只是希望去发现一些结构或者新模式。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424093307578.png"
+                      alt="image-20230424093307578"
+                ></p>
+<p><strong>聚类</strong> 算法就是其中一种</p>
+<p>它将<strong>未经过标记</strong>的数据放置到<strong>不同的集群</strong>中去</p>
+<p>eg:</p>
+<p>谷歌新闻排版，它会将相关性强的放在一起</p>
+<p>根据不同人的DNA去将不同的人进行分类</p>
+<p>机器学习中的一些常见术语</p>
+<p><strong>训练数据集</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424160445132.png"
+                      alt="image-20230424160445132"
+                ></p>
+<p>机器学习中：<strong>x代表输入，y代表预测值，y-hat代表真实值</strong></p>
+<p><strong>f函数</strong>其实就是我们所说的模型</p>
+<p>这是一个只有<strong>一个变量</strong>的<strong>线性回归</strong>函数</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424161307015.png"
+                      alt="image-20230424161307015"
+                ></p>
+<p>相关代码在文件 C1_W1_Lab03_Model_Representation_Soln</p>
+<blockquote>
+<p>[2022-Machine-Learning-Specialization&#x2F;C1_W1_Lab03_Model_Representation_Soln.ipynb at main · kaieye&#x2F;2022-Machine-Learning-Specialization (github.com)](<a class="link"   target="_blank" rel="noopener" href="https://github.com/kaieye/2022-Machine-Learning-Specialization/blob/main/Supervised" >https://github.com/kaieye/2022-Machine-Learning-Specialization/blob/main/Supervised <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> Machine Learning Regression and Classification&#x2F;week1&#x2F;4.Regression Model&#x2F;C1_W1_Lab03_Model_Representation_Soln.ipynb)</p>
+</blockquote>
+<p><strong>成本函数</strong></p>
+<p><strong>用于衡量预测值和实际值之间的误差</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424162714596.png"
+                      alt="image-20230424162714596"
+                ></p>
+<p>如何通过成本函数去找到模型（函数）的最佳参数</p>
+<p>如图，左边是一个预测函数f，自变量是x</p>
+<p>右边是一个成本函数，自变量是w</p>
+<p>绘制的函数图像如下</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424163727868.png"
+                      alt="image-20230424163727868"
+                ></p>
+<p>通过设置不同的w，我们可以绘制出右边的成本函数图像，如下</p>
+<p>进而我们可以通过求导数，来得出最优的w</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424164753749.png"
+                      alt="image-20230424164753749"
+                ></p>
+<p>这时候成本函数是一个关于（w,b）的二元函数</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\Juventus\AppData\Roaming\Typora\typora-user-images\image-20230424170119968.png"
+                      alt="image-20230424170119968"
+                ></p>
+
             </div>
 
             
                 <div class="post-copyright-info">
                     <div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> test</li>
+        <li><strong>Title:</strong> </li>
         <li><strong>Author:</strong> The Redefine Team</li>
-        <li><strong>Created at:</strong> 2023-04-24 20:56:05</li>
+        <li><strong>Created at:</strong> 2023-04-24 21:26:21</li>
         
             <li>
-                <strong>Updated at:</strong> 2023-04-24 20:56:05
+                <strong>Updated at:</strong> 2023-04-24 19:41:21
             </li>
         
         <li>
-            <strong>Link:</strong> https://redefine.ohevan.com/2023/04/24/test/
+            <strong>Link:</strong> https://redefine.ohevan.com/2023/04/24/ML/
         </li>
         <li>
             <strong>License:</strong> This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>.
@@ -280,29 +373,14 @@
             
                 <div class="article-nav">
                     
-                        <div class="article-prev">
-                            <a class="prev"
-                            rel="prev"
-                            href="/2023/04/24/ML-md/"
-                            >
-                                <span class="left arrow-icon flex-center">
-                                    <i class="fa-solid fa-chevron-left"></i>
-                                </span>
-                                <span class="title flex-center">
-                                    <span class="post-nav-title-item">ML.md</span>
-                                    <span class="post-nav-item">Prev posts</span>
-                                </span>
-                            </a>
-                        </div>
-                    
                     
                         <div class="article-next">
                             <a class="next"
                             rel="next"
-                            href="/2023/04/24/hello-world/"
+                            href="/2023/04/24/ML-md/"
                             >
                                 <span class="title flex-center">
-                                    <span class="post-nav-title-item">Hello World</span>
+                                    <span class="post-nav-title-item">ML.md</span>
                                     <span class="post-nav-item">Next posts</span>
                                 </span>
                                 <span class="right arrow-icon flex-center">
@@ -367,8 +445,8 @@
                 <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">test</div>
-        
+        <div class="page-title"></div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%EF%BC%88Supervised-learning%EF%BC%89"><span class="nav-text">监督学习（Supervised learning）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="nav-text">无监督学习</span></a></li></ol>
 
     </div>
 </div>
